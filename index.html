@@ -3411,27 +3411,30 @@
 
 
     <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
-    <script>
-document.addEventListener("keydown", function(e) {
+   <script>
+(function () {
 
-    // Ctrl + U
-    if (e.ctrlKey && e.key.toLowerCase() === 'u') {
+    // Prevent right click
+    document.addEventListener("contextmenu", function (e) {
         e.preventDefault();
-    }
+    });
 
-    // Ctrl + Shift + I / J
-    if (e.ctrlKey && e.shiftKey && 
-        (e.key.toLowerCase() === 'i' || e.key.toLowerCase() === 'j')) {
-        e.preventDefault();
-    }
+    // Push initial state
+    history.pushState(null, null, location.href);
 
-    // F12
-    if (e.key === "F12") {
-        e.preventDefault();
-    }
+    window.addEventListener("popstate", function () {
+        let exitPage = confirm("Do you really want to exit this page?");
+        if (exitPage) {
+            window.removeEventListener("popstate", arguments.callee);
+            history.back();
+        } else {
+            history.pushState(null, null, location.href);
+        }
+    });
 
-});
+})();
 </script>
+
 </body>
 
 </html>
