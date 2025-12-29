@@ -3411,38 +3411,22 @@
         </div>
     </div>
 
-    <!-- Optional UI kit (keep if you are using it) -->
+<!-- Optional UI kit (keep only if you use it) -->
 <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 
 <script>
 (function () {
 
     /* ==============================
-       RIGHT CLICK DISABLE
+       RIGHT CLICK DISABLE (Desktop)
     ============================== */
     document.addEventListener("contextmenu", function (e) {
         e.preventDefault();
     });
 
     /* ==============================
-       BACK BUTTON CONFIRMATION
+       MOBILE IMAGE LONG-PRESS REDUCE
     ============================== */
-    history.pushState(null, null, location.href);
-
-    window.addEventListener("popstate", function () {
-        const leavePage = confirm("Do you really want to exit this page?");
-        if (leavePage) {
-            window.removeEventListener("popstate", arguments.callee);
-            history.back();
-        } else {
-            history.pushState(null, null, location.href);
-        }
-    });
-
-})();
-</script>
-
-    <script>
     document.addEventListener("touchstart", function (e) {
         if (e.target.tagName === "IMG") {
             e.preventDefault();
@@ -3454,7 +3438,24 @@
             e.preventDefault();
         }
     }, { passive: false });
-    </script
+
+    /* ==============================
+       BACK BUTTON CONFIRMATION
+    ============================== */
+    history.pushState(null, null, location.href);
+
+    window.addEventListener("popstate", function () {
+        const leavePage = confirm("Do you really want to exit this page?");
+        if (leavePage) {
+            history.back();
+        } else {
+            history.pushState(null, null, location.href);
+        }
+    });
+
+})();
+</script>
+
 </body>
 
 </html>
