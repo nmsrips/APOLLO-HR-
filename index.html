@@ -3411,37 +3411,37 @@
         </div>
     </div>
 
+    <!-- Optional UI kit (keep if you are using it) -->
+<script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 
+<script>
+(function () {
 
+    /* ==============================
+       RIGHT CLICK DISABLE
+    ============================== */
+    document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+    });
 
-    <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
-    <script>
-        function handleBackButton() {
-            // Add a fake history entry to block immediate exit
+    /* ==============================
+       BACK BUTTON CONFIRMATION
+    ============================== */
+    history.pushState(null, null, location.href);
+
+    window.addEventListener("popstate", function () {
+        const leavePage = confirm("Do you really want to exit this page?");
+        if (leavePage) {
+            window.removeEventListener("popstate", arguments.callee);
+            history.back();
+        } else {
             history.pushState(null, null, location.href);
-
-            window.onpopstate = function() {
-                // Ask for confirmation
-                if (confirm("Do you really want to exit this page?")) {
-                    // Allow exit
-                    window.onpopstate = null;
-                    history.back();
-                } else {
-                    // Stay on page
-                    history.pushState(null, null, location.href);
-                }
-            };
         }
+    });
 
-        window.onload = handleBackButton;
-    </script>
-        <!-- RIGHT CLICK DISABLE CODE -->
-    <script>
-        document.addEventListener('contextmenu', event => event.preventDefault());
-    </script>
-    <script>
-        document.addEventListener('contextmenu', event => event.preventDefault());
-    </script>
+})();
+</script>
+
 
 </body>
 
