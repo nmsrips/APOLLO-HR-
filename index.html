@@ -3406,34 +3406,27 @@
         </div>
     </div>
 
-
-
-
-
     <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
-   <script>
-(function () {
-
-    // Prevent right click
-    document.addEventListener("contextmenu", function (e) {
-        e.preventDefault();
-    });
-
-    // Push initial state
-    history.pushState(null, null, location.href);
-
-    window.addEventListener("popstate", function () {
-        let exitPage = confirm("Do you really want to exit this page?");
-        if (exitPage) {
-            window.removeEventListener("popstate", arguments.callee);
-            history.back();
-        } else {
+    <script>
+        function handleBackButton() {
+            // Add a fake history entry to block immediate exit
             history.pushState(null, null, location.href);
-        }
-    });
 
-})();
-</script>
+            window.onpopstate = function() {
+                // Ask for confirmation
+                if (confirm("Do you really want to exit this page?")) {
+                    // Allow exit
+                    window.onpopstate = null;
+                    history.back();
+                } else {
+                    // Stay on page
+                    history.pushState(null, null, location.href);
+                }
+            };
+        }
+
+        window.onload = handleBackButton;
+    </script>
 
 </body>
 
