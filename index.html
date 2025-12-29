@@ -3411,29 +3411,36 @@
         </div>
     </div>
 
-<!-- Optional UI kit (keep only if you use it) -->
-<script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+<!-- 1️⃣ Optional UI Kit (keep only if you use it) -->
+<script type="text/javascript"
+        src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js">
+</script>
 
+<!-- 2️⃣ Back Button Confirmation -->
 <script>
-/* Right click disable – desktop only */
-document.addEventListener("contextmenu", function (e) {
-    e.preventDefault();
-});
+(function () {
 
-/* Back button confirmation */
-history.pushState(null, null, location.href);
-window.addEventListener("popstate", function () {
-    if (!confirm("Do you really want to exit this page?")) {
-        history.pushState(null, null, location.href);
-    }
-});
+    // Push fake history entry
+    history.pushState(null, null, location.href);
+
+    window.addEventListener("popstate", function () {
+        if (confirm("Do you really want to exit this page?")) {
+            history.back();   // allow exit
+        } else {
+            history.pushState(null, null, location.href); // stay
+        }
+    });
+
+})();
 </script>
-    <script>
-/* Desktop right click disable */
+
+<!-- 3️⃣ Right-Click Disable (Desktop + Mobile Browser Menu) -->
+<script>
 document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
 });
 </script>
+
 
 </body>
 
