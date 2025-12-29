@@ -559,23 +559,22 @@ li {
     border-color: black;
     width: 80vw;
 }
-body {
-    margin: 0;
-    padding: 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
+/* Ensure mobile & desktop scroll always works */
 html, body {
     overflow-y: auto;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
 }
 
-/* Reduce mobile long-press menu (safe, scroll-friendly) */
-img {
-    -webkit-touch-callout: none;
+/* Disable text selection & long-press copy */
+body {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Reduce mobile image long-press menu */
+img, a {
+    -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;
     user-select: none;
 }
