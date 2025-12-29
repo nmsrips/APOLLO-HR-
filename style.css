@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.youtube-radius {
+    border-radius: 10px;
+}
+
+.image-kronos {
+    height: 100vh;
+    width: auto;
+    border-radius: 10px;
+}
+
+.onbord-0 {
+    background-color: red;
+    display: block;
+    background-size: cover;
+    border-radius: 10px;
+    height: 25vh;
+    color: white;
+    text-align: center;
+
+}
+
+.onbord-insurance1 {
+    background-color: #FF9933;
+    display: block;
+    background-size: cover;
+    border-radius: 10px;
+    height: 25vh;
+    color: white;
+    text-align: center;
+
+}
+
+.onbord-insurance2 {
+    background-color: red;
+    display: block;
+    background-size: cover;
+    border-radius: 10px;
+    height: 25vh;
+    color: white;
+    text-align: center;
+
+}
+
+.onbord-insurance3 {
+    background-color: #138808;
+    display: block;
+    background-size: cover;
+    border-radius: 10px;
+    height: 25vh;
+    color: white;
+    text-align: center;
+
+}
+
+.onbord-Job {
+    background-color: blue;
+    display: block;
+    background-size: cover;
+    border-radius: 10px;
+    height: 25vh;
+}
+
+.color-box-1 {
+    padding: 20px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    font-weight: bold;
+    background-color: green;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.color-palette {
+    Font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.color-box {
+    padding: 5px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.color-name {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.onbord-ukg {
+    background-image: url("https://res.cloudinary.com/nmsrpushpa/image/upload/v1758216537/ON%20BORDING/Oracle_Logo.svg_1_pr8my2.png");
+    display: block;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    border-radius: 10px;
+    height: 20vh;
+    width: auto;
+    text-align: center;
+}
+
+.oracle-heading-1 {
+    color: white;
+    font-family: "Arial, sans-serif";
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.onbord-1 {
+    background-image: url("https://media.licdn.com/dms/image/v2/D4D12AQEmEfaSVbSwBw/article-cover_image-shrink_600_2000/B4DZnEd2HqGQAU-/0/1759937783967?e=2147483647&v=beta&t=hnZyujiCMmWqJ6_OKH6qbJsYUVRr0-TT88203NsOu6A");
+    display: block;
+    background-size: cover;
+    border-radius: 10px;
+    height: 25vh;
+}
+
+.onbord-2 {
+    background-image: url("https://static.oracle.com/cdn/fa/oracle_hcm_journeysUI/2510.19.253000419/ui/self/applications/worker-journeys/resources/components/journey-resources/images/Journey_Banner_Thumbnail-16-9_2.png");
+    display: block;
+    background-size: cover;
+    border-radius: 10px;
+    height: 25vh;
+
+}
+
+
+
+.onbord-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bg-colo {
+    background-image: url("https://images.unsplash.com/photo-1557683304-673a23048d34?q=80&w=1700&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    height: auto;
+
+}
+
+.bg-colo-1 {
+    background-image: url("https://rb.gy/ndh0rq");
+    background-size: cover;
+    height: auto;
+}
+
+.nav-bt {
+    background-color: white;
+
+}
+
+.navbar-Fix {
+    position: fixed;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1557683304-673a23048d34?q=80&w=1700&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    color: white;
+    padding-top: 0px;
+    text-align: left;
+    z-index: 1000;
+    /* keeps it above other elements */
+}
+
+
+.nav-style-text {
+    font-size: 16px;
+    font-weight: bold;
+
+
+}
+
+#nav-link1 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#nav-link2 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#nav-link3 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#nav-link4 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+.bg-container {
+
+    background-image: url("https://images.unsplash.com/photo-1557683304-673a23048d34?q=80&w=1700&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    border-radius: 5px;
+
+}
+
+.apollo-logo {
+    height: 120px;
+    padding: 5px;
+
+
+
+}
+
+.carosel {
+    padding: 5px;
+}
+
+.main-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0px;
+
+
+}
+
+.heading-Guid {
+    color: black;
+    font-family: "Roboto";
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0px;
+
+
+}
+
+.li-padding {
+    padding: 10px;
+
+}
+
+
+.card-para-carousel {
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 1px;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    font-weight: bold;
+
+}
+
+.card-outline {
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 1px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: white;
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+
+}
+
+.card-outline-medical {
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    font-weight: bold;
+    width: 90%;
+
+}
+
+h5 {
+    color: red;
+    font-family: "roboto";
+    font-weight: bold;
+    font-size: 24px;
+}
+
+li {
+    font-family: "roboto";
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+
+.card-departments {
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0px;
+    color: green;
+
+}
+
+.paragraph {
+    font-family: "Roboto";
+}
+
+.img-button {
+    font-family: "roboto";
+    font-weight: bold;
+    color: white;
+    height: 120px;
+    width: 135px;
+    border-width: 2px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.img-button-authenzia {
+    font-family: "roboto";
+    font-weight: bold;
+    color: white;
+    height: 150px;
+    width: 150px;
+    border-width: 2px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.img-button-m {
+    font-family: "roboto";
+    font-weight: bold;
+    color: white;
+    height: 120px;
+    width: 135px;
+    border-width: 2px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid black;
+
+}
+
+.button-onbord {
+    font-family: "roboto";
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    background-color: pink;
+    height: 180px;
+    width: 195px;
+    border-width: 2px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.hiring {
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.image {
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+}
+
+.oracle {
+    font-family: "roboto";
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    width: 138px;
+    height: 60px;
+    border-width: 0px;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+.ukg-bg-container {
+    background-image: url("https://rb.gy/ndh0rq");
+    background-size: cover;
+    height: auto;
+}
+
+.ukg-bg-container-peoplestrong {
+    background-image: url("https://rb.gy/ndh0rq");
+    background-size: cover;
+    height: auto;
+}
+
+.apollo-logo-ukg {
+    height: 150px;
+    padding: 20px;
+}
+
+.button-back {
+    font-family: "roboto";
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #0a8080;
+    width: 160px;
+    height: 80px;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 10px;
+    Font-size: 25px;
+
+}
+
+.button-Medical {
+    font-family: "roboto";
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #0a8080;
+    width: auto;
+    height: 85px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 10px;
+    padding: 5px;
+
+
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+
+.card-link {
+    margin-left: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+
+}
+
+.ukg-buttons {
+    font-family: "roboto";
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    width: 150px;
+    background-color: #045057;
+    border-style: solid;
+    height: 80px;
+    border-width: 2px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+.card-server {
+    background-color: lightyellow;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    padding: 1px;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.card-ukg {
+    background-color: white;
+    width: auto;
+}
+
+.margin-top {
+    margin-top: 100px;
+}
+
+.ukg-password-image {
+    padding: 25px;
+    border-radius: 40px;
+    padding-top: 20px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: black;
+    margin: 20px;
+}
+
+.para-kronos {
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.paragraph-1 {
+    color: white;
+    font-family: "roboto";
+    font-weight: bold;
+}
+
+.button-hiring {
+    font-family: "roboto";
+    font-weight: bold;
+    color: white;
+    width: 30vw;
+    height: 40vh;
+    border-width: 2px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.ukg-password {
+    padding: 25px;
+    border-radius: 40px;
+    padding-top: 20px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: black;
+    width: 80vw;
+}
