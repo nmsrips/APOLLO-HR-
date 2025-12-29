@@ -3442,7 +3442,19 @@
 })();
 </script>
 
+    <script>
+    document.addEventListener("touchstart", function (e) {
+        if (e.target.tagName === "IMG") {
+            e.preventDefault();
+        }
+    }, { passive: false });
 
+    document.addEventListener("touchend", function (e) {
+        if (e.target.tagName === "IMG") {
+            e.preventDefault();
+        }
+    }, { passive: false });
+    </script
 </body>
 
 </html>
