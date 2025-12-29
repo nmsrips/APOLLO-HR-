@@ -3411,35 +3411,38 @@
         </div>
     </div>
 
-<!-- 1️⃣ Optional UI Kit (keep only if you use it) -->
+        <!-- Optional UI Kit (keep only if you use it) -->
 <script type="text/javascript"
         src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js">
 </script>
 
-<!-- 2️⃣ Back Button Confirmation -->
 <script>
 (function () {
 
-    // Push fake history entry
+    /* ==============================
+       RIGHT CLICK DISABLE
+       (Desktop + Mobile Browser Menu)
+    ============================== */
+    document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+    });
+
+    /* ==============================
+       BACK BUTTON CONFIRMATION
+    ============================== */
     history.pushState(null, null, location.href);
 
     window.addEventListener("popstate", function () {
         if (confirm("Do you really want to exit this page?")) {
-            history.back();   // allow exit
+            history.back();
         } else {
-            history.pushState(null, null, location.href); // stay
+            history.pushState(null, null, location.href);
         }
     });
 
 })();
 </script>
 
-<!-- 3️⃣ Right-Click Disable (Desktop + Mobile Browser Menu) -->
-<script>
-document.addEventListener("contextmenu", function (e) {
-    e.preventDefault();
-});
-</script>
 
 
 </body>
