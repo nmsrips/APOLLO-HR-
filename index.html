@@ -3415,45 +3415,18 @@
 <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 
 <script>
-(function () {
+/* Right click disable – desktop only */
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});
 
-    /* ==============================
-       RIGHT CLICK DISABLE (Desktop)
-    ============================== */
-    document.addEventListener("contextmenu", function (e) {
-        e.preventDefault();
-    });
-
-    /* ==============================
-       MOBILE IMAGE LONG-PRESS REDUCE
-    ============================== */
-    document.addEventListener("touchstart", function (e) {
-        if (e.target.tagName === "IMG") {
-            e.preventDefault();
-        }
-    }, { passive: false });
-
-    document.addEventListener("touchend", function (e) {
-        if (e.target.tagName === "IMG") {
-            e.preventDefault();
-        }
-    }, { passive: false });
-
-    /* ==============================
-       BACK BUTTON CONFIRMATION
-    ============================== */
-    history.pushState(null, null, location.href);
-
-    window.addEventListener("popstate", function () {
-        const leavePage = confirm("Do you really want to exit this page?");
-        if (leavePage) {
-            history.back();
-        } else {
-            history.pushState(null, null, location.href);
-        }
-    });
-
-})();
+/* Back button confirmation */
+history.pushState(null, null, location.href);
+window.addEventListener("popstate", function () {
+    if (!confirm("Do you really want to exit this page?")) {
+        history.pushState(null, null, location.href);
+    }
+});
 </script>
 
 </body>
