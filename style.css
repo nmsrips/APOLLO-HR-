@@ -568,3 +568,15 @@ img {
     max-width: 100%;
     height: auto;
 }
+/* Disable mobile long-press menu */
+img, a {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Ensure scroll always works */
+html, body {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
