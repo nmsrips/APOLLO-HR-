@@ -3412,35 +3412,26 @@
 
     <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
     <script>
-        function handleBackButton() {
-            // Add a fake history entry to block immediate exit
-            history.pushState(null, null, location.href);
+document.addEventListener("keydown", function(e) {
 
-            window.onpopstate = function() {
-                // Ask for confirmation
-                if (confirm("Do you really want to exit this page?")) {
-                    // Allow exit
-                    window.onpopstate = null;
-                    history.back();
-                } else {
-                    // Stay on page
-                    history.pushState(null, null, location.href);
-                }
-            };
-        }
+    // Ctrl + U
+    if (e.ctrlKey && e.key.toLowerCase() === 'u') {
+        e.preventDefault();
+    }
 
-        window.onload = handleBackButton;
-    </script>
-    <script>
-        document.addEventListener('contextmenu', event => event.preventDefault());
-    </script>
-    
-    <script>
-        document.addEventListener('contextmenu', function(e) {
-         e.preventDefault();
-        });
-    </script>
+    // Ctrl + Shift + I / J
+    if (e.ctrlKey && e.shiftKey && 
+        (e.key.toLowerCase() === 'i' || e.key.toLowerCase() === 'j')) {
+        e.preventDefault();
+    }
 
+    // F12
+    if (e.key === "F12") {
+        e.preventDefault();
+    }
+
+});
+</script>
 </body>
 
 </html>
