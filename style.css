@@ -578,3 +578,44 @@ img, a {
     -webkit-user-select: none;
     user-select: none;
 }
+
+
+
+
+
+
+
+.footer {
+  background-color: #232F3E;
+  color: white;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-box h4 {
+  margin-bottom: 10px;
+}
+
+.footer-box a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.footer-box a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #ccc;
+}
