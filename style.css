@@ -585,6 +585,12 @@ img, a {
 
 
 
+
+body {
+  background: red;
+}
+
+
 .footer {
   background-color: #232F3E;
   color: white;
@@ -594,7 +600,13 @@ img, a {
 
 .footer-columns {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-box {
+  width: 23%;
 }
 
 .footer-box h4 {
@@ -615,7 +627,7 @@ img, a {
 
 .footer-bottom {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 13px;
   color: #ccc;
 }
