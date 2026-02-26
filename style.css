@@ -631,3 +631,73 @@ body {
   font-size: 13px;
   color: #ccc;
 }
+
+
+
+
+
+
+
+
+/* List of holidys */
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container-holidays {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+.page-heading {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.sub-heading {
+    text-align: center;
+    color: #555;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #2c7be5;
+    color: #ffffff;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e9f2ff;
+}
+
+.note {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
