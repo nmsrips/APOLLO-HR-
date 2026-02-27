@@ -583,7 +583,14 @@ img, a {
 
 
 
-
+/* FORCE EMAIL BREAK ON MOBILE */
+.footer-box a {
+  display: block;
+  max-width: 100%;
+  word-break: break-all;     /* 🔥 main fix */
+  overflow-wrap: anywhere;  /* 🔥 modern browsers */
+  white-space: normal;
+}
 
 
 .footer {
