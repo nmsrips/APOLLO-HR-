@@ -713,3 +713,27 @@ tbody tr:hover {
     font-size: 14px;
     color: #555;
 }
+
+
+
+
+
+
+<style>
+/* Disable selection everywhere */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Enable selection ONLY for this section */
+.allow-copy {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  cursor: text;
+}
+</style>
